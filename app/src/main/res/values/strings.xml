@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Just Speak</string>
+    <string name="learn_a_language_nat_your_nown_pace">Learn a language\nat your own Pace</string>
+    <string name="speak_on_the_go">Speak on the go!</string>
+    <string name="get_started">Get Started</string>
+    <string name="home">Home</string>
+    <string name="languages">Languages</string>
+    <string name="about">About</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome to JustSpeak!</string>
+    <string name="would_you_like_to_speak_fluently_keep_scrolling">Would you like to speak fluently? keep scrolling!</string>
+    <string name="languages_we_teach">Languages we teach</string>
+    <string name="content_contributors">Content Contributors</string>
+    <string name="chichewa">Chichewa</string>
+    <string name="french">French</string>
+    <string name="german">German</string>
+    <string name="a_language">Pick a language to start with</string>
+    <string name="about_justspeak">About JustSpeak</string>
+    <string name="aboutinfoyes">justspeak is a hobbyist language group based in Malawi. It has one sole aim which is to get people speaking a language as soon as possible.</string>
+    <string name="aboutinfono">No need to spend too much time trying to grasp grammatical concepts. We want you to speak right on the go!!</string>
+    <string name="contact">Contact</string>
+    <string name="emailer">mvundomsiska13@gmail.com</string>
+    <string name="_265_0_882_292_415">+265 (0) 882 292 415</string>
+    <string name="wilkommen">Wilkommen</string>
+    <string name="to">to</string>
+</resources>
