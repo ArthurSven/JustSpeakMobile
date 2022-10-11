@@ -23,17 +23,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".SecondActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".SecondActivity"
             android:exported="true"
-            android:theme="@style/Theme.Design.Light.NoActionBar"/>
-        <activity android:name=".German.GermanActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
+        <activity
+            android:name=".German.GermanActivity"
             android:exported="true"
-            android:parentActivityName=".SecondActivity"
-            android:theme="@style/Theme.JustSpeak2."/>
-
+            android:theme="@style/Theme.JustSpeak." />
+        <activity android:name=".German.GermanGrammar.GermanAlphabet"
+            android:exported="true"
+            android:theme="@style/Theme.JustSpeak."
+            android:parentActivityName=".German.GermanActivity"/>
+        <activity android:name=".German.GermanGrammar.GermanAdjectives"
+            android:exported="true"
+            android:theme="@style/Theme.JustSpeak."
+            android:parentActivityName=".German.GermanActivity"/>
     </application>
 
 </manifest>

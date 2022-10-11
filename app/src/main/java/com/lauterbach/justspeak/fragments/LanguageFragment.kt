@@ -12,12 +12,14 @@ import com.lauterbach.justspeak.databinding.FragmentLanguageBinding
 
 class LanguageFragment : Fragment() {
 
+    lateinit var binding: FragmentLanguageBinding
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val binding = FragmentLanguageBinding.inflate(layoutInflater)
+        binding = FragmentLanguageBinding.inflate(layoutInflater)
 
         //Clickable cards
         binding.german.setOnClickListener {
