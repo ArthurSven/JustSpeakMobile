@@ -5,10 +5,13 @@ import android.os.Bundle
 import android.system.Os.bind
 import android.system.Os.close
 import android.text.TextUtils.replace
+import android.view.Gravity
 import android.view.MenuItem
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -22,7 +25,7 @@ import org.json.JSONObject
 class GermanActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityGermanBinding
-    private lateinit var toggle: ActionBarDrawerToggle
+    private lateinit var toggle: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,11 +36,12 @@ class GermanActivity : AppCompatActivity() {
         val  drawerLayout = binding.drawerLayout
         val navView = binding.navView
 
-        toggle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
-        drawerLayout.addDrawerListener(toggle)
-        toggle.syncState()
+        toggle = binding.menus
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        toggle.setOnClickListener {
+            drawerLayout.openDrawer(GravityCompat.START)
+        }
+
 
         navView.setNavigationItemSelectedListener{
             when(it.itemId) {
@@ -51,12 +55,12 @@ class GermanActivity : AppCompatActivity() {
         }
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+   /* override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if(toggle.onOptionsItemSelected(item)){
             return true
         }
         return super.onOptionsItemSelected(item)
-    }
+    } */
 
    private fun setCurrentFragment(fragment: Fragment): Boolean {
         supportFragmentManager.beginTransaction().apply {

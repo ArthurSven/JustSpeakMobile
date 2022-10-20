@@ -12,14 +12,12 @@ import com.lauterbach.justspeak.databinding.FragmentLanguageBinding
 
 class GermanHomeFragment : Fragment() {
 
-    lateinit var binding: FragmentGermanHomeBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentGermanHomeBinding.inflate(layoutInflater)
-        return binding.root
+        return inflater.inflate(R.layout.fragment_german_home, container, false)
     }
 
 }
