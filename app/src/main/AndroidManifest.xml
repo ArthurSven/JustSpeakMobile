@@ -41,7 +41,7 @@
             android:parentActivityName=".German.GermanActivity"/>
         <activity android:name=".German.GermanGrammar.GermanAdjectives"
             android:exported="true"
-            android:theme="@style/Theme.JustSpeak."
+            android:theme="@style/Theme.JustSpeak"
             android:parentActivityName=".German.GermanActivity"/>
     </application>
 

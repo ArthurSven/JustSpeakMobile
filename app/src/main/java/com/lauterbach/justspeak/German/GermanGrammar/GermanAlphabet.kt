@@ -5,13 +5,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.lauterbach.justspeak.R
-import com.lauterbach.justspeak.adapters.GermanAlphabetAdapter
-import com.lauterbach.justspeak.adapters.GermanAlphabetAdapter2
-import com.lauterbach.justspeak.adapters.GermanAlphabetAdapter3
-import com.lauterbach.justspeak.data.AlphabetData
-import com.lauterbach.justspeak.data.GermanAlphabet2
-import com.lauterbach.justspeak.data.GermanAlphabet3
-import com.lauterbach.justspeak.data.LanguageData
+import com.lauterbach.justspeak.adapters.GermanAdapters.GermanAlphabetAdapter
+import com.lauterbach.justspeak.adapters.GermanAdapters.GermanAlphabetAdapter2
+import com.lauterbach.justspeak.adapters.GermanAdapters.GermanAlphabetAdapter3
+import com.lauterbach.justspeak.data.GermanData.AlphabetData
+import com.lauterbach.justspeak.data.GermanData.GermanAlphabet2
+import com.lauterbach.justspeak.data.GermanData.GermanAlphabet3
 
 
 class GermanAlphabet : AppCompatActivity() {

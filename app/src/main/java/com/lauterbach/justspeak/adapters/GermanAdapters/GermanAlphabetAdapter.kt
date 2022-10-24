@@ -1,13 +1,12 @@
-package com.lauterbach.justspeak.adapters
+package com.lauterbach.justspeak.adapters.GermanAdapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.lauterbach.justspeak.German.GermanGrammar.GermanAlphabet
 import com.lauterbach.justspeak.R
-import com.lauterbach.justspeak.data.AlphabetData
+import com.lauterbach.justspeak.data.GermanData.AlphabetData
 
 class GermanAlphabetAdapter(
     var germanLetters: ArrayList<AlphabetData>
