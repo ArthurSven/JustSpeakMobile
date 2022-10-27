@@ -43,6 +43,9 @@
             android:exported="true"
             android:theme="@style/Theme.JustSpeak"
             android:parentActivityName=".German.GermanActivity"/>
+        <activity android:name=".German.GermanGrammar.GermanCases"
+            android:theme="@style/Theme.JustSpeak"
+            android:exported="true"/>
     </application>
 
 </manifest>

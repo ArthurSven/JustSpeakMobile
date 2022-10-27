@@ -188,6 +188,31 @@
     <string name="dat">Dat</string>
     <string name="gen">Gen</string>
     <string name="er1">er</string>
+    <string name="german_case_title">Cases (die Fälle) and Articles (die Artikel)</string>
+    <string name="gerCasSub1">Sentences in the German language fall into 4 different cases namely Nominative, Accusative, Dative and Genitive. Each case emphasizes on a different part of a sentence thus learners should pay extra attention to the emphasis of each sentence.</string>
+    <string name="gerCasSub2">However before we go into the case system, first we have to understand that nouns in German fall under 3 articles. Each article shows the gender of a noun whether it is masculine, feminine or neutral. The articles can further be categorised into two groups:</string>
+    <string name="bestimmt">Bestimmte Artikel (Definite articles):</string>
+    <string name="erklarung">These are equivalent to the in english. In German, there is der(masc), die(fem) and das(neut)</string>
+    <string name="unbestimmt">Unbestimmte Artikel (Definite articles):</string>
+    <string name="erklarung2">These are equivalent to a in english. In German there is ein(masc/neut) and eine(fem)</string>
+    <string name="gerCasSub3">With definite articles nouns could look like this:</string>
+    <string name="der_junge">• Der Junge (The Boy)</string>
+    <string name="die_frau">• Die Frau (The Woman)</string>
+    <string name="das_madchen">• Das Mädchen (The girl)</string>
+    <string name="gerCaseSub3">With the articles explained, the cases become much easy to understand. As stated at the beginning, there are four different cases and each of the cases have a different emphasis on a sentence.</string>
+    <string name="gerCaseSub3_to_1">Cases can also be divided into either definite or indefinite. The cases go like this</string>
+    <string name="ein_junge">• Ein Junge (A boy)</string>
+    <string name="eine_frau">• Eine Frau (A woman)</string>
+    <string name="ein_madchen">• Ein Mädchen (A girl)</string>
+    <string name="nominativ_nominative">Nominativ (Nominative)</string>
+    <string name="gerNominativeExp">This case shows the subject of the sentence or who the sentence is about e.g. Der Junge nimmt den Ball. (The boy takes the ball)</string>
+    <string name="akkusativ_accusative">Akkusativ (Accusative):</string>
+    <string name="gerAkkExp">This case shows the direct object of the sentence e.g. Ich sehe das Mädchen. (I see the girl)</string>
+    <string name="dativ_dative">Dativ (Dative):</string>
+    <string name="gerDatExp">This case shows the indirect object of a sentence e.g. Ich gab dem Mann die Uhr. (I gave the watch to the man)</string>
+    <string name="genitiv_genitive">Genitiv (Genitive):</string>
+    <string name="GenCaseExp">This case shows possession of something in a sentence e.g. Die Frau des Mannes kommt heute nicht. (The man\'s wife is not coming today)</string>
+    <string name="gerCaseSub4">With the case system explained and the with examples given, below are tables that display how articles are written in different cases (both definite and indefinite):</string>
 
 
 </resources>
