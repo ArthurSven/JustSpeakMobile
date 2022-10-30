@@ -213,6 +213,23 @@
     <string name="genitiv_genitive">Genitiv (Genitive):</string>
     <string name="GenCaseExp">This case shows possession of something in a sentence e.g. Die Frau des Mannes kommt heute nicht. (The man\'s wife is not coming today)</string>
     <string name="gerCaseSub4">With the case system explained and the with examples given, below are tables that display how articles are written in different cases (both definite and indefinite):</string>
+    <string name="definite_articles">Definite Articles</string>
+    <string name="indefinite_articles">Indefinite Articles</string>
+    <string name="cas">Cas</string>
+    <string name="der">der</string>
+    <string name="die">die</string>
+    <string name="das">das</string>
+    <string name="dem">dem</string>
+    <string name="den">den</string>
+    <string name="des">des</string>
+    <string name="ein">ein</string>
+    <string name="eine">eine</string>
+    <string name="einem">einem</string>
+    <string name="einen">einen</string>
+    <string name="einer">einer</string>
+    <string name="eines">eines</string>
+    <string name="blank">-</string>
+
 
 
 </resources>

@@ -224,64 +224,74 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/germanCaseSub3" />
+
         <LinearLayout
             android:id="@+id/casesGerman"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@id/germanCaseSub3to1">
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/germanCaseSub3to1"
+            tools:layout_editor_absoluteX="-122dp">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/nominativ_nominative"
-                android:textStyle="bold"
                 android:textColor="@color/black"
-                android:textSize="16sp"/>
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/gerNominativeExp"
-                android:textSize="16sp"/>
+                android:textSize="16sp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/akkusativ_accusative"
-                android:textStyle="bold"
-                android:textColor="@color/black"
                 android:layout_marginTop="15dp"
-                android:textSize="16sp"/>
+                android:text="@string/akkusativ_accusative"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/gerAkkExp"
-                android:textSize="16sp"/>
+                android:textSize="16sp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/dativ_dative"
-                android:textStyle="bold"
-                android:textColor="@color/black"
                 android:layout_marginTop="15dp"
-                android:textSize="16sp"/>
+                android:text="@string/dativ_dative"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/gerDatExp"
-                android:textSize="16sp"/>
+                android:textSize="16sp" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/genitiv_genitive"
-                android:textStyle="bold"
-                android:textColor="@color/black"
                 android:layout_marginTop="15dp"
-                android:textSize="16sp"/>
+                android:text="@string/genitiv_genitive"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/GenCaseExp"
-                android:textSize="16sp"/>
+                android:textSize="16sp" />
         </LinearLayout>
 
         <TextView
@@ -292,6 +302,169 @@
             android:text="@string/gerCaseSub4"
             android:layout_marginTop="20dp"
             app:layout_constraintTop_toBottomOf="@id/casesGerman"/>
+        <TextView
+            android:id="@+id/GermanDefiniteArticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="@string/definite_articles"
+            app:layout_constraintTop_toBottomOf="@id/germanCaseSub4"/>
+        <TableLayout
+            android:id="@+id/germanDefArtTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/GermanDefiniteArticle">
+            <TableRow
+                android:id="@+id/gerDefArtRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_blue">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/cas"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/masc"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/fem"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/neu"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/plu"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/germanDefArtRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </TableLayout>
+        <TextView
+            android:id="@+id/GermanIndefiniteArticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="@string/indefinite_articles"
+            app:layout_constraintTop_toBottomOf="@id/germanDefArtTable"/>
+        <TableLayout
+            android:id="@+id/germanIndefArtTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/GermanIndefiniteArticle">
+            <TableRow
+                android:id="@+id/gerIndefArt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_blue">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/cas"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/masc"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/fem"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/neu"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="@string/plu"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/germanIndArtRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </TableLayout>
 
 
 
