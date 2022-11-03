@@ -46,6 +46,9 @@
         <activity android:name=".German.GermanGrammar.GermanCases"
             android:theme="@style/Theme.JustSpeak"
             android:exported="true"/>
+        <activity android:name=".German.GermanGrammar.GermanNouns"
+            android:theme="@style/Theme.JustSpeak"
+            android:exported="true"/>
     </application>
 
 </manifest>

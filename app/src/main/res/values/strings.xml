@@ -229,7 +229,14 @@
     <string name="einer">einer</string>
     <string name="eines">eines</string>
     <string name="blank">-</string>
-
+    <string name="german_nouns_die_hauptw_rter">German Nouns \n (die Hauptwörter)</string>
+    <string name="gerNoun1">Nouns are basically objects and things that we see and know. In German nouns have genders which can get tricky for many english speakers as english words do not have genders.</string>
+    <string name="gerNounSub2">It is important to learn each German noun with its gender in oder to learn the genders easily. Another tip is to capitalise nouns.In this chapter, you will learn about significant nouns as well as tips and tricks to remembering some noun genders.</string>
+    <string name="people_die_personnen">People (die Personnen)</string>
+    <string name="places_die_orten">Places (die Orten)</string>
+    <string name="food_and_drink_n_essen_und_getr_nke">Food and Drink \n (Essen und Getränke)</string>
+    <string name="human_body_n_der_k_rper">Human body \n (der Körper)</string>
+    <string name="select_category_to_learn_nouns">Select category to learn nouns: </string>
 
 
 </resources>

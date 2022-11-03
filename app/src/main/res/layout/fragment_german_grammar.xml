@@ -42,7 +42,6 @@
                 android:layout_column="0"
                 android:layout_columnWeight="1"
                 android:layout_margin="8dp"
-
                 android:padding="10dp"
                 app:cardCornerRadius="10dp"
                 app:cardElevation="8dp">

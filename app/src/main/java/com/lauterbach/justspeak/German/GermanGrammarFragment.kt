@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import com.lauterbach.justspeak.German.GermanGrammar.GermanAdjectives
 import com.lauterbach.justspeak.German.GermanGrammar.GermanAlphabet
 import com.lauterbach.justspeak.German.GermanGrammar.GermanCases
+import com.lauterbach.justspeak.German.GermanGrammar.GermanNouns
 import com.lauterbach.justspeak.R
 import com.lauterbach.justspeak.databinding.FragmentGermanGrammarBinding
 import com.lauterbach.justspeak.databinding.FragmentGermanHomeBinding
@@ -34,6 +35,10 @@ open class GermanGrammarFragment : Fragment() {
         }
         binding.GermanCasesCard.setOnClickListener {
             val intent = Intent(this@GermanGrammarFragment.requireContext(), GermanCases::class.java)
+            startActivity(intent)
+        }
+        binding.GermanNounsCard.setOnClickListener {
+            val intent = Intent(this@GermanGrammarFragment.requireContext(), GermanNouns::class.java)
             startActivity(intent)
         }
         return binding.root
