@@ -35,20 +35,36 @@
             android:name=".German.GermanActivity"
             android:exported="true"
             android:theme="@style/Theme.JustSpeak" />
-        <activity android:name=".German.GermanGrammar.GermanAlphabet"
+        <activity
+            android:name=".German.GermanGrammar.GermanAlphabet"
             android:exported="true"
-            android:theme="@style/Theme.JustSpeak"
-            android:parentActivityName=".German.GermanActivity"/>
-        <activity android:name=".German.GermanGrammar.GermanAdjectives"
+            android:parentActivityName=".German.GermanActivity"
+            android:theme="@style/Theme.JustSpeak" />
+        <activity
+            android:name=".German.GermanGrammar.GermanAdjectives"
             android:exported="true"
-            android:theme="@style/Theme.JustSpeak"
-            android:parentActivityName=".German.GermanActivity"/>
-        <activity android:name=".German.GermanGrammar.GermanCases"
+            android:parentActivityName=".German.GermanActivity"
+            android:theme="@style/Theme.JustSpeak" />
+        <activity
+            android:name=".German.GermanGrammar.GermanCases"
+            android:exported="true"
+            android:theme="@style/Theme.JustSpeak" />
+        <activity
+            android:name=".German.GermanGrammar.GermanNouns"
+            android:exported="true"
+            android:theme="@style/Theme.JustSpeak" />
+        <activity android:name=".German.GermanGrammar.Nouns.GermanPeopleNouns"
+            android:exported="true"
+            android:theme="@style/Theme.JustSpeak"/>
+        <activity android:name=".German.GermanGrammar.Nouns.GermanPlaceNoun"
+            android:exported="true"
+            android:theme="@style/Theme.JustSpeak"/>
+        <activity android:name=".German.GermanGrammar.Nouns.GermanFoodNoun"
             android:theme="@style/Theme.JustSpeak"
             android:exported="true"/>
-        <activity android:name=".German.GermanGrammar.GermanNouns"
+        <activity android:name=".German.GermanGrammar.Nouns.GermanBodyNoun"
             android:theme="@style/Theme.JustSpeak"
             android:exported="true"/>
-    </application>
 
+    </application>
 </manifest>
