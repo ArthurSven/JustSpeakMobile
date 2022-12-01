@@ -17,7 +17,7 @@
             android:layout_marginTop="45dp"
             android:text="@string/german_nouns_die_hauptw_rter"
             android:textAlignment="center"
-            android:textColor="@color/light_blue"
+            android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,8 +15,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
+            android:text="@string/numbers_die_zahlen"
             android:textColor="@color/black"
-            android:text="@string/alphabet_das_alphabet"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -24,12 +25,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/GAsubtitle"
+            android:id="@+id/GNumbersubtitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:justificationMode="inter_word"
-            android:text="@string/GAsummary1"
+            android:text="@string/gerNoSub1"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -37,25 +38,26 @@
             app:layout_constraintTop_toBottomOf="@id/GAtitle" />
 
         <TextView
-            android:id="@+id/GAsubtitle2"
+            android:id="@+id/GNumbersubtitle2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="@string/GAsummary2"
+            android:text="@string/gerNoSub2"
             android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/GAsubtitle" />
+            app:layout_constraintTop_toBottomOf="@id/GNumbersubtitle" />
 
         <TableLayout
-            android:id="@+id/GATable1"
+            android:id="@+id/GNumberTable1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/GAsubtitle2">
+            app:layout_constraintTop_toBottomOf="@id/GNumbersubtitle2">
+
             <TableRow
-                android:id="@+id/GerTable1"
+                android:id="@+id/GerNoTable1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/light_blue"
@@ -66,10 +68,10 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"
+                    android:layout_weight="5"
                     android:gravity="center_horizontal"
                     android:padding="10dp"
-                    android:text="@string/letter"
+                    android:text="@string/number_german"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -77,7 +79,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
+                    android:layout_weight="5"
                     android:gravity="center_horizontal"
                     android:padding="10dp"
                     android:text="@string/pronunciation"
@@ -88,45 +90,55 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_weight="5"
                     android:gravity="center_horizontal"
                     android:padding="10dp"
-                    android:text="@string/audio"
+                    android:text="@string/number_n_english"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
             </TableRow>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/GerTableRecycler"
+                android:id="@+id/GerNoRecycler"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
         </TableLayout>
+
+        <TextView
+            android:id="@+id/germanSub3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/GerNo02text"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/GNumberTable1" />
+
         <TableLayout
-            android:id="@+id/GATable2"
+            android:id="@+id/secondGermanNoTable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/GATable1">
+            app:layout_constraintTop_toBottomOf="@id/germanSub3">
+
             <TableRow
-                android:id="@+id/GerTable2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/light_blue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent">
+                android:background="@color/light_blue">
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"
+                    android:layout_weight="5"
                     android:gravity="center_horizontal"
                     android:padding="10dp"
-                    android:text="@string/letter"
+                    android:text="@string/number_german"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -134,7 +146,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="4"
+                    android:layout_weight="5"
                     android:gravity="center_horizontal"
                     android:padding="10dp"
                     android:text="@string/pronunciation"
@@ -145,76 +157,43 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="2"
+                    android:layout_weight="5"
                     android:gravity="center_horizontal"
                     android:padding="10dp"
-                    android:text="@string/audio"
+                    android:text="@string/number_n_english"
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
             </TableRow>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/GerTableRecycler1"
+                android:id="@+id/GerNoRecycler2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content" />
         </TableLayout>
-        <TableLayout
-            android:id="@+id/GATable3"
+
+        <TextView
+            android:id="@+id/gerNoSub4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/german_number_explanation"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/GATable2">
-            <TableRow
-                android:id="@+id/GerTable3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/light_blue"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintTop_toBottomOf="@id/secondGermanNoTable" />
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:gravity="center_horizontal"
-                    android:padding="10dp"
-                    android:text="@string/letter"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="4"
-                    android:gravity="center_horizontal"
-                    android:padding="10dp"
-                    android:text="@string/pronunciation"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="2"
-                    android:gravity="center_horizontal"
-                    android:padding="10dp"
-                    android:text="@string/audio"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-            </TableRow>
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/GerTableRecycler2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-        </TableLayout>
+        <TextView
+            android:id="@+id/gerNoSub5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/ger_no_sub"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gerNoSub4" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

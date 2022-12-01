@@ -39,9 +39,5 @@ class GermanNouns : AppCompatActivity() {
                 startActivity(it)
             }
         }
-
-
-
-
     }
 }

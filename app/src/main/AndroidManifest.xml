@@ -7,9 +7,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_starter1"
+        android:icon="@mipmap/ic_starter3"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_starter1_round"
+        android:roundIcon="@mipmap/ic_starter3_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JustSpeak"
         tools:targetApi="31">
@@ -64,7 +64,9 @@
             android:exported="true"/>
         <activity android:name=".German.GermanGrammar.Nouns.GermanBodyNoun"
             android:theme="@style/Theme.JustSpeak"
+        android:exported="true"/>
+        <activity android:name=".German.GermanGrammar.GermanNumbers"
+            android:theme="@style/Theme.JustSpeak"
             android:exported="true"/>
-
     </application>
 </manifest>
