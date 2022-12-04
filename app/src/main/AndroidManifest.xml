@@ -53,20 +53,29 @@
             android:name=".German.GermanGrammar.GermanNouns"
             android:exported="true"
             android:theme="@style/Theme.JustSpeak" />
-        <activity android:name=".German.GermanGrammar.Nouns.GermanPeopleNouns"
+        <activity
+            android:name=".German.GermanGrammar.Nouns.GermanPeopleNouns"
+            android:exported="true"
+            android:theme="@style/Theme.JustSpeak" />
+        <activity
+            android:name=".German.GermanGrammar.Nouns.GermanPlaceNoun"
+            android:exported="true"
+            android:theme="@style/Theme.JustSpeak" />
+        <activity
+            android:name=".German.GermanGrammar.Nouns.GermanFoodNoun"
+            android:exported="true"
+            android:theme="@style/Theme.JustSpeak" />
+        <activity
+            android:name=".German.GermanGrammar.Nouns.GermanBodyNoun"
+            android:exported="true"
+            android:theme="@style/Theme.JustSpeak" />
+        <activity
+            android:name=".German.GermanGrammar.GermanNumbers"
+            android:exported="true"
+            android:theme="@style/Theme.JustSpeak" />
+        <activity android:name=".German.GermanGrammar.GermanPronouns"
             android:exported="true"
             android:theme="@style/Theme.JustSpeak"/>
-        <activity android:name=".German.GermanGrammar.Nouns.GermanPlaceNoun"
-            android:exported="true"
-            android:theme="@style/Theme.JustSpeak"/>
-        <activity android:name=".German.GermanGrammar.Nouns.GermanFoodNoun"
-            android:theme="@style/Theme.JustSpeak"
-            android:exported="true"/>
-        <activity android:name=".German.GermanGrammar.Nouns.GermanBodyNoun"
-            android:theme="@style/Theme.JustSpeak"
-        android:exported="true"/>
-        <activity android:name=".German.GermanGrammar.GermanNumbers"
-            android:theme="@style/Theme.JustSpeak"
-            android:exported="true"/>
     </application>
+
 </manifest>

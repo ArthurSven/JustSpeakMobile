@@ -42,6 +42,10 @@ open class GermanGrammarFragment : Fragment() {
             val intent = Intent(this@GermanGrammarFragment.requireContext(), GermanNumbers::class.java)
             startActivity(intent)
         }
+        binding.GermanPronounsCard.setOnClickListener {
+            val intent = Intent(this@GermanGrammarFragment.requireContext(), GermanPronouns::class.java)
+            startActivity(intent)
+        }
         return binding.root
 
     }

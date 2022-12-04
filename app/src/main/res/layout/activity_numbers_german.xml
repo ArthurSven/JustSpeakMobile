@@ -191,6 +191,7 @@
             android:layout_marginTop="10dp"
             android:text="@string/ger_no_sub"
             android:textSize="16sp"
+            android:textColor="@color/darkslategray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
