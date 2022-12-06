@@ -41,7 +41,6 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
@@ -558,4 +557,36 @@
     <string name="gerDat7">euch - to you (plural)</string>
     <string name="gerDat8">Sie - Ihnen (formal)</string>
     <string name="gerDat9">sie - ihnen</string>
+    <string name="possessive_pronouns">Possessive Pronouns</string>
+    <string name="masculine_possessive_pronoun">Masculine possessive pronouns</string>
+    <string name="feminine_possessive_pronouns">Feminine possessive pronouns</string>
+    <string name="neutral_possessive_pronouns">Neutral\n possessive pronouns</string>
+    <string name="plural_possessive_pronouns">Plural\n possessive pronouns</string>
+    <string name="reflexive_pronouns">Reflexive pronouns</string>
+    <string name="these_are_pronouns_that_reflect_back_to_the_subject_referred_in_a_sentence_in_english_this_would_be_i_will_do_it_myself_below_are_tables_and_examples_of_the_reflexive_pronouns">These are pronouns that reflect back to the subject referred in a sentence, in english this would be ( I will do it myself). Below are tables and examples of the reflexive pronouns.</string>
+    <string name="pronoun">Pronoun</string>
+    <string name="pro">Pro</string>
+    <string name="reflexive_pronoun">Reflexive Pronoun</string>
+    <string name="example">Example</string>
+    <string name="accusative_reflexive_pronoun">Accusative reflexive pronoun</string>
+    <string name="ich">Ich</string>
+    <string name="du">Du</string>
+    <string name="er_sie_es">Er/Sie/ES</string>
+    <string name="wir">Wir</string>
+    <string name="ihr">Ihr</string>
+    <string name="sie">Sie</string>
+    <string name="mich">Mich</string>
+    <string name="dich">Dich</string>
+    <string name="sich">Sich</string>
+    <string name="uns">Uns</string>
+    <string name="euch">Euch</string>
+    <string name="gerAccProSen1">Ich wasche mich (I wash myself)</string>
+    <string name="gerAccProSen2">Du entspannst dich (You relax yourself)</string>
+    <string name="gerAccProSen3">Sie kümmert sich um die Eltern (She takes care of the parents)</string>
+    <string name="gerAccProSen4">Wir müssen uns entschuldigen (We have to excuse ourselves)</string>
+    <string name="gerAccProSen5">Ihr irrt euch (You are wrong)</string>
+    <string name="gerAccProSen6">Sie entspannen sich (They relax themselves))</string>
+
+
+
 </resources>

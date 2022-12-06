@@ -7,10 +7,13 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.lauterbach.justspeak.R
 import com.lauterbach.justspeak.adapters.GermanAdapters.GermanPronoun1Adapter
+import com.lauterbach.justspeak.adapters.GermanAdapters.GermanReflexiveAdapter
 import com.lauterbach.justspeak.data.GermanData.GermanPronounData
+import com.lauterbach.justspeak.data.GermanData.GermanReflexivePronounData
 
 class GermanPronouns : AppCompatActivity() {
 
+    //first table
     lateinit var germanPronounList: ArrayList<GermanPronounData>
     lateinit var nominativ: Array<String>
     lateinit var akkusativ: Array<String>
@@ -18,16 +21,31 @@ class GermanPronouns : AppCompatActivity() {
     lateinit var gerProAdapter: GermanPronoun1Adapter
     lateinit var gerPronounCycle: RecyclerView
 
+    //second table
+    lateinit var gerAccProList: ArrayList<GermanReflexivePronounData>
+    lateinit var pro: Array<String>
+    lateinit var ref: Array<String>
+    lateinit var exe: Array<String>
+    lateinit var refAdapter: GermanReflexiveAdapter
+    lateinit var gerAccRecycler: RecyclerView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_german_pronouns)
 
+        //First table
         firstPronouns()
-
         val gerProAdapter = GermanPronoun1Adapter(germanPronounList)
         gerPronounCycle = findViewById(R.id.gerProRecycler1)
         gerPronounCycle.adapter = gerProAdapter
         gerPronounCycle.layoutManager = LinearLayoutManager(this)
+
+        //Second table
+        accReflexivePronoun()
+        val refAdapter = GermanReflexiveAdapter(gerAccProList)
+        gerAccRecycler = findViewById(R.id.gerProRecycler2)
+        gerAccRecycler.adapter = refAdapter
+        gerAccRecycler.layoutManager = LinearLayoutManager(this)
     }
 
     fun firstPronouns() {
@@ -74,6 +92,43 @@ class GermanPronouns : AppCompatActivity() {
                 nominativ[i], akkusativ[i], dativ[i]
             )
             germanPronounList.add(case)
+        }
+    }
+
+    fun accReflexivePronoun() {
+        gerAccProList = arrayListOf<GermanReflexivePronounData>()
+
+        pro = arrayOf(
+            getString(R.string.ich),
+            getString(R.string.du),
+            getString(R.string.er_sie_es),
+            getString(R.string.wir),
+            getString(R.string.ihr),
+            getString(R.string.sie)
+        )
+
+        ref = arrayOf(
+            getString(R.string.mich),
+            getString(R.string.dich),
+            getString(R.string.sich),
+            getString(R.string.uns),
+            getString(R.string.euch),
+            getString(R.string.sich)
+        )
+
+        exe = arrayOf(
+            getString(R.string.gerAccProSen1),
+            getString(R.string.gerAccProSen2),
+            getString(R.string.gerAccProSen3),
+            getString(R.string.gerAccProSen4),
+            getString(R.string.gerAccProSen5),
+            getString(R.string.gerAccProSen6)
+        )
+        for (j in pro.indices) {
+            val fourth = GermanReflexivePronounData(
+                pro[j], ref[j], exe[j]
+            )
+            gerAccProList.add(fourth)
         }
     }
 }

@@ -3,33 +3,30 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
     <TextView
-        android:id="@+id/nom"
+        android:id="@+id/GermanPronoun"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="2"
+        android:layout_weight="3"
         android:gravity="center_horizontal"
         android:padding="10dp"
-        android:text="@string/nom"
         android:textColor="@color/black"
         android:textSize="18sp"/>
     <TextView
-        android:id="@+id/acc"
+        android:id="@+id/GermanReflexivePronoun"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="2"
+        android:layout_weight="3"
         android:gravity="center_horizontal"
         android:padding="10dp"
-        android:text="@string/acc"
-        android:textColor="@color/black"
-        android:textSize="18sp"/>
-    <TextView
-        android:id="@+id/dat"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="2"
-        android:gravity="center_horizontal"
-        android:padding="10dp"
-        android:text="@string/dat"
         android:textColor="@color/black"
         android:textSize="18sp" />
+    <TextView
+        android:id="@+id/GermanExample"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"/>
 </TableRow>
