@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/germanHome"
+            android:title="@string/home"/>
+        <item
+            android:id="@+id/germanGrammar"
+            android:title="@string/grammar"/>
+        <item
+            android:id="@+id/germanPhrases"
+            android:title="@string/phrases"/>
+        <item
+            android:id="@+id/germanResources"
+            android:title="@string/resources"/>
+        <item
+            android:id="@+id/germanTrivia"
+            android:title="@string/trivia"/>
+    </group>
+</menu>
