@@ -586,6 +586,16 @@
     <string name="gerAccProSen4">Wir müssen uns entschuldigen (We have to excuse ourselves)</string>
     <string name="gerAccProSen5">Ihr irrt euch (You are wrong)</string>
     <string name="gerAccProSen6">Sie entspannen sich (They relax themselves))</string>
+    <string name="dative_reflexive_pronoun">Dative reflexive pronoun</string>
+    <string name="mir">Mir</string>
+    <string name="dir">Dir</string>
+    <string name="gerDatSen1">Ich rasiere mir das Gesicht (I shave my face)</string>
+    <string name="gerDatSen2">Du kaufst dir das Auto(You buy yourself the car)</string>
+    <string name="gerDatSen3">Sie kleidet sich selbst (She dresses herself up)</string>
+    <string name="gerDatSen4">	Wir lassen uns ausruhen (We let ourselves rest)</string>
+    <string name="gerDatSen5">Ihr streit euch gern (You like to fight each other)</string>
+    <string name="gerDatSen6">Sie kaufen sich alles (They buy themselves everything)</string>
+
 
 
 

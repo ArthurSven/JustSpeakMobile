@@ -6,8 +6,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.lauterbach.justspeak.R
+import com.lauterbach.justspeak.adapters.GermanAdapters.GermanDativeReflexiveAdapter
 import com.lauterbach.justspeak.adapters.GermanAdapters.GermanPronoun1Adapter
 import com.lauterbach.justspeak.adapters.GermanAdapters.GermanReflexiveAdapter
+import com.lauterbach.justspeak.data.GermanData.GermanDativePronounData
 import com.lauterbach.justspeak.data.GermanData.GermanPronounData
 import com.lauterbach.justspeak.data.GermanData.GermanReflexivePronounData
 
@@ -29,6 +31,14 @@ class GermanPronouns : AppCompatActivity() {
     lateinit var refAdapter: GermanReflexiveAdapter
     lateinit var gerAccRecycler: RecyclerView
 
+    //third tables
+    lateinit var gerDatProList: ArrayList<GermanDativePronounData>
+    lateinit var datPro: Array<String>
+    lateinit var datRef: Array<String>
+    lateinit var datExa: Array<String>
+    lateinit var datAdapter: GermanDativePronounData
+    lateinit var gerDatRecycler: RecyclerView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_german_pronouns)
@@ -46,6 +56,13 @@ class GermanPronouns : AppCompatActivity() {
         gerAccRecycler = findViewById(R.id.gerProRecycler2)
         gerAccRecycler.adapter = refAdapter
         gerAccRecycler.layoutManager = LinearLayoutManager(this)
+
+        //third table
+        datReflexivePronoun()
+        val datRefAdapter = GermanDativeReflexiveAdapter(gerDatProList)
+        gerDatRecycler = findViewById(R.id.gerProRecycler3)
+        gerDatRecycler.adapter = datRefAdapter
+        gerDatRecycler.layoutManager = LinearLayoutManager(this)
     }
 
     fun firstPronouns() {
@@ -129,6 +146,44 @@ class GermanPronouns : AppCompatActivity() {
                 pro[j], ref[j], exe[j]
             )
             gerAccProList.add(fourth)
+        }
+    }
+
+    fun datReflexivePronoun() {
+
+        gerDatProList = arrayListOf<GermanDativePronounData>()
+
+        datPro = arrayOf(
+            getString(R.string.ich),
+            getString(R.string.du),
+            getString(R.string.er_sie_es),
+            getString(R.string.wir),
+            getString(R.string.ihr),
+            getString(R.string.sie)
+        )
+
+        datRef = arrayOf(
+            getString(R.string.mir),
+            getString(R.string.dir),
+            getString(R.string.sich),
+            getString(R.string.uns),
+            getString(R.string.euch),
+            getString(R.string.sich)
+        )
+
+        datExa = arrayOf(
+            getString(R.string.gerDatSen1),
+            getString(R.string.gerDatSen2),
+            getString(R.string.gerDatSen3),
+            getString(R.string.gerDatSen4),
+            getString(R.string.gerDatSen5),
+            getString(R.string.gerDatSen6)
+        )
+        for (k in datPro.indices) {
+            val seventh = GermanDativePronounData(
+                datPro[k], datRef[k], datExa[k]
+            )
+            gerDatProList.add(seventh)
         }
     }
 }
