@@ -185,7 +185,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/masculine_possessive_pronoun"
+                        android:text="@string/nominative_possesive_pronouns"
                         android:textAlignment="center"
                         android:textColor="@color/light_blue"
                         android:textSize="18sp"

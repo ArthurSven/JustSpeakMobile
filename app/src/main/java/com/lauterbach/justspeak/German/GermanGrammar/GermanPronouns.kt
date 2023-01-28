@@ -1,10 +1,14 @@
 package com.lauterbach.justspeak.German.GermanGrammar
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.LayoutManager
+import com.google.android.material.card.MaterialCardView
+import com.lauterbach.justspeak.German.GermanGrammar.GermanPossessivePronouns.NominativePossesivePronoun
 import com.lauterbach.justspeak.R
 import com.lauterbach.justspeak.adapters.GermanAdapters.GermanDativeReflexiveAdapter
 import com.lauterbach.justspeak.adapters.GermanAdapters.GermanPronoun1Adapter
@@ -39,9 +43,18 @@ class GermanPronouns : AppCompatActivity() {
     lateinit var datAdapter: GermanDativePronounData
     lateinit var gerDatRecycler: RecyclerView
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_german_pronouns)
+
+        val nominativePossessive = findViewById<MaterialCardView>(R.id.gerMascPronoun1)
+
+        nominativePossessive.setOnClickListener {
+            Intent(this, NominativePossesivePronoun::class.java).also {
+                startActivity(it)
+            }
+        }
 
         //First table
         firstPronouns()

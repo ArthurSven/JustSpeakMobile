@@ -595,8 +595,33 @@
     <string name="gerDatSen4">	Wir lassen uns ausruhen (We let ourselves rest)</string>
     <string name="gerDatSen5">Ihr streit euch gern (You like to fight each other)</string>
     <string name="gerDatSen6">Sie kaufen sich alles (They buy themselves everything)</string>
-
-
-
+    <string name="nominative_possesive_pronouns">Nominative possesive Pronouns</string>
+    <string name="mein">mein (my)</string>
+    <string name="dein_your">dein (your)</string>
+    <string name="ihr_her">ihr (her)</string>
+    <string name="sein_his">sein (his)</string>
+    <string name="sein_its">sein (its)</string>
+    <string name="unser_our">Unser (our)</string>
+    <string name="euer_your_plural">euer (your) plural</string>
+    <string name="ihr_your_formal">ihr (your) formal</string>
+    <string name="ihr_their">ihr (their)</string>
+    <string name="meiner">meiner</string>
+    <string name="meine">meine</string>
+    <string name="meines">meines</string>
+    <string name="ihrer">ihrer</string>
+    <string name="ihre">ihre</string>
+    <string name="ihres">ihres</string>
+    <string name="seiner">seiner</string>
+    <string name="seine">seine</string>
+    <string name="seines">seines</string>
+    <string name="unsere">unsere</string>
+    <string name="unseres">unseres</string>
+    <string name="unserer">unserer</string>
+    <string name="eurer">eurer</string>
+    <string name="eures">eures</string>
+    <string name="eure">eure</string>
+    <string name="deine">deine</string>
+    <string name="deiner">deiner</string>
+    <string name="deines">deines</string>
 
 </resources>
