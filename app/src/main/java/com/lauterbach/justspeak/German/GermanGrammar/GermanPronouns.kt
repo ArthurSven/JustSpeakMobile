@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.LayoutManager
 import com.google.android.material.card.MaterialCardView
+import com.lauterbach.justspeak.German.GermanGrammar.GermanPossessivePronouns.AccusativePossessivePronoun
 import com.lauterbach.justspeak.German.GermanGrammar.GermanPossessivePronouns.NominativePossesivePronoun
 import com.lauterbach.justspeak.R
 import com.lauterbach.justspeak.adapters.GermanAdapters.GermanDativeReflexiveAdapter
@@ -49,9 +50,15 @@ class GermanPronouns : AppCompatActivity() {
         setContentView(R.layout.activity_german_pronouns)
 
         val nominativePossessive = findViewById<MaterialCardView>(R.id.gerMascPronoun1)
+        val accusativePossessive = findViewById<MaterialCardView>(R.id.gerMascPronoun2)
 
         nominativePossessive.setOnClickListener {
             Intent(this, NominativePossesivePronoun::class.java).also {
+                startActivity(it)
+            }
+        }
+        accusativePossessive.setOnClickListener {
+            Intent(this, AccusativePossessivePronoun::class.java).also {
                 startActivity(it)
             }
         }

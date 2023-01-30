@@ -623,5 +623,6 @@
     <string name="deine">deine</string>
     <string name="deiner">deiner</string>
     <string name="deines">deines</string>
+    <string name="accusative_possessive_pronouns">Accusative possessive Pronouns</string>
 
 </resources>
