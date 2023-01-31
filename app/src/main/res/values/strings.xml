@@ -624,5 +624,17 @@
     <string name="deiner">deiner</string>
     <string name="deines">deines</string>
     <string name="accusative_possessive_pronouns">Accusative possessive Pronouns</string>
-
+    <string name="dative_possessive_pronouns">Dative possessive Pronouns</string>
+    <string name="meinen">meinen</string>
+    <string name="deinen">deinen</string>
+    <string name="ihren">ihren</string>
+    <string name="euren">euren</string>
+    <string name="unseren">unseren</string>
+    <string name="seinen">seinen</string>
+    <string name="seinem">seinem</string>
+    <string name="meinem">meinem</string>
+    <string name="deinem">deinem</string>
+    <string name="ihrem">ihrem</string>
+    <string name="eurem">eurem</string>
+    <string name="unserem">unserem</string>
 </resources>

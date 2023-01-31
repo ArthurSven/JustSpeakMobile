@@ -22,6 +22,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".German.GermanGrammar.GermanPossessivePronouns.AccusativePossessivePronoun"
+            android:exported="true"
+            android:theme="@style/Theme.JustSpeak" />
+        <activity android:name=".German.GermanGrammar.GermanPossessivePronouns.DativePossessivePronoun"
+            android:exported="true"
+            android:theme="@style/Theme.JustSpeak"/>
+        <activity
             android:name=".SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.JustSpeak">
