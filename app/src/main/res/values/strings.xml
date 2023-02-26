@@ -637,4 +637,7 @@
     <string name="ihrem">ihrem</string>
     <string name="eurem">eurem</string>
     <string name="unserem">unserem</string>
+    <string name="sentence_structure_satzbau">Sentence structure (Satzbau)</string>
+    <string name="GerSenStruP1">One of the most dreaded yet essential skills in German in the sentence structure. Understanding basic German word order is a bridge to fluency and speaking. In this Chapteryou will learn how sentences in German are structured and how to do this easily</string>
+    <string name="GerSenStruP2">Basic German sentences have the same strcture as english sentences: They follow the Subject - Verb - Object sequence e.g.</string>
 </resources>
